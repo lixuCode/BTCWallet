@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>账号</title>
+    <script src="/js/lib/jquery-3.3.1.min.js"></script>
+    <script src="/js/lib/jquery.url.js"></script>
+    <script src="/js/walletInfo.js"></script>
+    <link rel="stylesheet" href="/css/btcwallet.css">
+</head>
+
+<body>
+    <%include block/nav.html%>
+
+    <div id="main">
+        <h1></h1>
+        <h3>余额：<span id="balance"></span> BTC</h3>
+        <h3>未被确认的余额：<span id="unc_balance"></span> BTC</h3>
+        <h3>主地址：<span id="main-address"></span></h3>
+
+        <button onclick="createSubAddress()">新建子账号地址</button>
+        <br><br>
+
+        <table>
+            <tr>
+                <td>路径</td>
+                <td>子账号地址</td>
+            </tr>
+            <tbody id="address-list-table">
+                
+            </tbody>
+        </table>
+        
+        <div style="position: absolute;left: 30%;bottom:30px;">Copyright © 2016-2018 北京从零到壹科技有限公司</div>
+    </div>
+</body>
+
+</html>

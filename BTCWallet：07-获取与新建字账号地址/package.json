@@ -1,0 +1,16 @@
+{
+  "name": "btcwallet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bitcore-wallet-client": "^6.7.5",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  }
+}
