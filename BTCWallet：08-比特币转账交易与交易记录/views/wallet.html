@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>钱包</title>
+    <script src="/js/lib/jquery-3.3.1.min.js"></script>
+    <script src="/js/lib/jquery.url.js"></script>
+    <script src="/js/wallet.js"></script>
+    <link rel="stylesheet" href="/css/btcwallet.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <%include block/nav.html%>
+
+    <div id="main">
+        <h1>钱包列表</h1>
+        <form id="wallet-create-form">
+            <button type="submit">创建钱包</button>
+            <input type="text" name="walletname" placeholder="请输入钱包名称">
+            <input type="text" name="password" placeholder="请输入钱包密码">
+        </form>
+        
+        <form id="wallet-mnemonic-import-form">
+            <button type="submit">助记词导入钱包</button>
+            <input type="text" name="walletname" placeholder="请输入钱包名称">
+            <input type="text" name="password" placeholder="请输入钱包新密码">
+            <br><br>
+            <textarea rows="3" cols="50" name="mnemonic" placeholder="请输入助记词"></textarea>
+        </form>
+
+        <table>
+            <tbody id="wallet-list-table"></tbody>
+        </table>
+
+        <div style="position: absolute;left: 30%;bottom:30px;">Copyright © 2016-2018 北京从零到壹科技有限公司</div>
+    </div>
+</body>
+
+</html>

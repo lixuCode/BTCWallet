@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>转账</title>
+    <script src="/js/lib/jquery-3.3.1.min.js"></script>
+    <script src="/js/lib/jquery.url.js"></script>
+    <script src="/js/transaction.js"></script>
+    <link rel="stylesheet" href="/css/btcwallet.css">
+</head>
+
+<body>
+    <%include block/nav.html%>
+
+    <div id="main">
+        <h1>向比特币地址转账BTC</h1>
+        <form id="transaction-send-form" 　>
+            <input type="text" name="to" placeholder="请输入对方收款地址">
+            <label>收款地址</label>
+            <br><br>
+
+            <input type="text" name="amount" placeholder="请输入转账数量">
+            <label>BTC金额</label>
+            <br><br>
+
+            <input type="text" name="password" placeholder="请输入钱包密码">
+            <label>密码</label>
+            <br><br>
+
+            <label>付款钱包：</label>
+            <select name="walletname" id="transaction-send-address-select">
+            </select>
+            <br>
+
+            <label>可用余额：</label><span id="balance"></span>　BTC
+            <br><br>
+
+            <button type="submit">发送交易</button>
+            
+            <div style="position: absolute;left: 30%;bottom:30px;">Copyright © 2016-2018 北京从零到壹科技有限公司</div>
+        </form>
+    </div>
+</body>
+
+</html>

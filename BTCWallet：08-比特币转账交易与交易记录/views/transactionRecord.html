@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <title>钱包</title>
+    <script src="/js/lib/jquery-3.3.1.min.js"></script>
+    <script src="/js/lib/jquery.url.js"></script>
+    <script src="/js/transactionRecord.js"></script>
+    <link rel="stylesheet" href="/css/btcwallet.css">
+</head>
+
+<body>
+    <%include block/nav.html%>
+
+    <div id="main">
+        <h1>交易列表</h1>
+        <select name="walletname" id="transaction-record-wallet-select">
+        </select><span> 钱包</span>
+        <br>
+        <table>
+            <tr>
+                <td>交易</td>
+                <td>金额/BTC</td>
+                <td>对方地址</td>
+                <td>交易时间</td>
+                <td>确认个数</td>
+            </tr>
+            <tbody id="transaction-list-table"></tbody>
+        </table>
+
+        <div style="position: absolute;left: 30%;bottom:30px;">Copyright © 2016-2018 北京从零到壹科技有限公司</div>
+    </div>
+</body>
+
+</html>
